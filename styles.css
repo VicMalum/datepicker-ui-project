@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: #0B1D51;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 250px;
+    position: absolute;
+    top: 125px;
+    border:2px solid #8CCDEB;
+    border-radius: 14px;
+    overflow: hidden;
+}
+
+.datepicker {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    border-bottom: #0B1D51;
+}
+
+.datepicker img {
+    height: 30px;
+}
+
+.datepicker input {
+    text-align: center;
+    height: 30px;
+}
+
+.calendar-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.calendar-header span {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.calendar-header img {
+    height: 30px;
+}
+
+.calendar {
+    background-color: #725CAD ;
+}
+
+.day-names {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    padding: 5px;
+}
+
+.day-names span {
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    text-align: center;
+    transition: 0.25s;
+}
+
+.days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    padding: 5px;
+}
+
+.days span {
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    text-align: center;
+    transition: 0.25s;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.day-names span:hover, .days span:hover {
+    background-color: #FFE3A9;
+    border-radius: 50%;
+}
